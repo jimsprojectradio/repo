@@ -7,7 +7,8 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select an operation on schedules:"
         android:textColor="#000000"
@@ -23,16 +24,25 @@
         android:layout_gravity="center_horizontal">
 
         <Button
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
             android:id="@+id/btn_set_add_schedule"
             android:text="Add \nSchedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
             android:id="@+id/btn_set_edit_schedule"
             android:text="Edit \nSchedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
             android:id="@+id/btn_set_remove_schedule"
             android:text="Remove \nSchedule"
             android:layout_width="wrap_content"
@@ -159,6 +169,7 @@
                 android:layout_marginTop="10dp">
                 <TextView
                     android:textSize="20dp"
+                    android:textColorHint="#0e0e0e"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -205,9 +216,11 @@
                 android:layout_marginTop="10dp">
                 <TextView
                     android:textSize="20dp"
+                    android:textColor="#0e0e0e"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColorHint="#0e0e0e"
                     android:hint="To:"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -243,6 +256,9 @@
             </LinearLayout>
 
             <Button
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_add_schedule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -263,6 +279,8 @@
             android:orientation="vertical"
             android:visibility="gone">
             <TextView
+                android:textColorHint="#0e0e0e"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Select a schedule to modify."
@@ -296,6 +314,7 @@
                 android:layout_gravity="center_horizontal">
                 <TextView
                     android:textSize="15dp"
+                    android:textColorHint="#0e0e0e"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Scheduled date:"/>
@@ -312,6 +331,7 @@
                 android:layout_height="1dp"
                 android:background="#000000"/>
             <TextView
+                android:textColorHint="#0e0e0e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Display shedule dates"
@@ -325,6 +345,7 @@
                 android:layout_gravity="center_horizontal">
                 <TextView
                     android:textSize="15dp"
+                    android:textColorHint="#0e0e0e"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="From :"/>
@@ -342,6 +363,7 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal">
                 <TextView
+                    android:textColorHint="#0e0e0e"
                     android:textSize="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -355,6 +377,9 @@
             </LinearLayout>
             <Button
                 android:id="@+id/btn_update_schedule"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -378,6 +403,7 @@
                 android:layout_height="wrap_content"
                 android:text="Select a schedule to remove"
                 android:textColor="#000000"
+                android:textColorHint="#0e0e0e"
                 android:textSize="20dp"
                 android:layout_marginTop="5dp"/>
             <Spinner
@@ -386,11 +412,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"/>
             <TextView
+                android:textAlignment="center"
                 android:id="@+id/txt_remove_schedule_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"/>
             <Button
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_remove_schedule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
