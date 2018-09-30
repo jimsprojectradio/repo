@@ -65,9 +65,9 @@ public class FragmentShow extends Fragment implements View.OnClickListener{
         btn_edit_show_layout.setOnClickListener(this);
         btn_remove_show_layout=(Button)v.findViewById(R.id.btn_set_remove_show);
         btn_remove_show_layout.setOnClickListener(this);
-        btn_add_show_layout.setBackgroundResource(android.R.drawable.btn_default);
-        btn_edit_show_layout.setBackgroundResource(android.R.drawable.btn_default);
-        btn_remove_show_layout.setBackgroundResource(android.R.drawable.btn_default);
+        btn_add_show_layout.setBackgroundResource(R.drawable.button_background);
+        btn_edit_show_layout.setBackgroundResource(R.drawable.button_background);
+        btn_remove_show_layout.setBackgroundResource(R.drawable.button_background);
 
         //Action buttons for queries
         btn_add_show=(Button)v.findViewById(R.id.btn_add_show);
@@ -135,7 +135,7 @@ public class FragmentShow extends Fragment implements View.OnClickListener{
             }
         });
 
-        btn_add_show_layout.setBackgroundColor(Color.parseColor("#00ff00"));
+        btn_add_show_layout.setBackgroundResource(R.drawable.button_background);
         layout_add_show.setVisibility(View.VISIBLE);
         layout_edit_show.setVisibility(View.GONE);
         layout_remove_show.setVisibility(View.GONE);
@@ -147,9 +147,9 @@ public class FragmentShow extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_set_add_show:
-                btn_add_show_layout.setBackgroundColor(Color.parseColor("#00ff00"));
-                btn_edit_show_layout.setBackgroundResource(android.R.drawable.btn_default);
-                btn_remove_show_layout.setBackgroundResource(android.R.drawable.btn_default);
+                btn_add_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_edit_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_remove_show_layout.setBackgroundResource(R.drawable.button_background);
                 layout_add_show.setVisibility(View.VISIBLE);
                 layout_edit_show.setVisibility(View.GONE);
                 layout_remove_show.setVisibility(View.GONE);
@@ -157,9 +157,9 @@ public class FragmentShow extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btn_set_edit_show:
-                btn_edit_show_layout.setBackgroundColor(Color.parseColor("#00ff00"));
-                btn_add_show_layout.setBackgroundResource(android.R.drawable.btn_default);
-                btn_remove_show_layout.setBackgroundResource(android.R.drawable.btn_default);
+                btn_edit_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_add_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_remove_show_layout.setBackgroundResource(R.drawable.button_background);
                 show_progbar.setVisibility(View.VISIBLE);
                 layout_add_show.setVisibility(View.GONE);
                 layout_edit_show.setVisibility(View.GONE);
@@ -170,9 +170,9 @@ public class FragmentShow extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btn_set_remove_show:
-                btn_remove_show_layout.setBackgroundColor(Color.parseColor("#00ff00"));
-                btn_add_show_layout.setBackgroundResource(android.R.drawable.btn_default);
-                btn_edit_show_layout.setBackgroundResource(android.R.drawable.btn_default);
+                btn_remove_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_add_show_layout.setBackgroundResource(R.drawable.button_background);
+                btn_edit_show_layout.setBackgroundResource(R.drawable.button_background);
                 show_progbar.setVisibility(View.VISIBLE);
                 layout_add_show.setVisibility(View.GONE);
                 layout_edit_show.setVisibility(View.GONE);

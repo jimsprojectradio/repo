@@ -23,16 +23,23 @@
         android:layout_gravity="center_horizontal">
 
         <Button
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
             android:id="@+id/btn_set_add_show"
             android:text="Add Show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:padding="10dp"
+            android:textColor="#fff"
             android:id="@+id/btn_set_edit_show"
             android:text="Edit Show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:padding="10dp"
+            android:textColor="#fff"
             android:id="@+id/btn_set_remove_show"
             android:text="Remove Show"
             android:layout_width="wrap_content"
@@ -104,6 +111,9 @@
                 android:layout_marginTop="5dp"/>
 
             <Button
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_add_show"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
@@ -136,6 +146,7 @@
                 android:textColor="#000000"/>
 
             <Spinner
+                android:background="@drawable/border_bottom"
                 android:id="@+id/spinner_edit_show"
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="10dp"
@@ -199,6 +210,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Update Show"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
@@ -229,6 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:background="@drawable/border_bottom"
                 android:layout_marginLeft="10dp"/>
 
             <TextView
@@ -254,6 +269,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Remove Show"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center_horizontal"/>
 
