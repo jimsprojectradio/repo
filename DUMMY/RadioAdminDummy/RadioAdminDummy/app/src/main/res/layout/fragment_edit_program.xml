@@ -24,6 +24,8 @@
             android:orientation="vertical"
             android:visibility="visible">
             <GridLayout
+                android:padding="10dp"
+                android:background="@drawable/border_bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
@@ -35,6 +37,7 @@
                     android:textSize="20dp"
                     android:textColor="#000000"/>
                 <Spinner
+                    android:layout_marginBottom="6dp"
                     android:id="@+id/sp_editprog_get_show"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -58,27 +61,30 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Edit the program name:"
-                android:textSize="20dp"
-                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginTop="5dp"/>
 
             <EditText
+                android:padding="8dp"
                 android:id="@+id/edt_edit_progname"
                 android:textSize="15dp"
+                android:backgroundTint="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Edit program name"/>
 
             <LinearLayout
+                android:background="@drawable/border_bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Change show:"
                     android:textSize="20dp"
-                    android:textColor="#000000"
                     android:layout_marginRight="10dp"/>
                 <Spinner
                     android:id="@+id/sp_edit_show_to_prog"
@@ -91,11 +97,12 @@
                 android:layout_height="wrap_content"
                 android:text="Edit the program description:"
                 android:textSize="20dp"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginTop="5dp"/>
             <EditText
                 android:id="@+id/edt_edit_progdesc"
                 android:textSize="15dp"
+                android:backgroundTint="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Edit description"
@@ -109,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:text="Edit the audio link:"
                 android:textSize="20dp"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginTop="5dp"/>
             <EditText
                 android:id="@+id/edt_edit_proglink"
@@ -128,9 +135,9 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:layout_height="wrap_content"
                     android:text="Edit Date (YYYY/MM/DD): "
-                    android:textColor="#000000"
                     android:textSize="20dp"/>
                 <EditText
                     android:id="@+id/edit_prog_date"
@@ -145,6 +152,7 @@
 
             <!--layout for guest1-->
             <LinearLayout
+                android:background="@drawable/border_bottom"
                 android:id="@+id/editguest_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -158,6 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Guest 1 details:"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"/>
@@ -180,14 +189,20 @@
                     android:orientation="horizontal"
                     android:layout_gravity="center_horizontal">
                     <Button
+                        android:textColor="#fff"
                         android:id="@+id/btnedit_add_guest2"
+                        android:background="@drawable/button_background"
+android:padding="6dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+ Add more"/>
                     <Button
+                        android:textColor="#fff"
                         android:id="@+id/btnedit_remove_guest1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:padding="6dp"
                         android:layout_marginLeft="10dp"
                         android:text="Remove"/>
                 </LinearLayout>
@@ -200,6 +215,7 @@
 
             <!--layout for guest2-->
             <LinearLayout
+                android:background="@drawable/border_bottom"
                 android:id="@+id/editguest_layout_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -211,6 +227,7 @@
                     android:layout_height="wrap_content"
                     android:text="Guest 2 details:"
                     android:textSize="15dp"
+                    android:textColor="@color/colorPrimary"
                     android:layout_gravity="center_horizontal"/>
                 <Spinner
                     android:id="@+id/sp_edit_guest2"
@@ -226,6 +243,9 @@
                     android:layout_height="wrap_content" />
 
                 <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/button_background"
+                    android:padding="6dp"
                     android:id="@+id/btnedit_remove_guest2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -236,12 +256,14 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:background="#000000"/>
             </LinearLayout>
 
             <!--layout for anchor1-->
             <LinearLayout
+                android:background="@drawable/border_bottom"
                 android:id="@+id/editanchor_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -252,6 +274,7 @@
                     android:layout_height="wrap_content"
                     android:text="Anchor 1 details:"
                     android:textSize="15dp"
+                    android:textColor="@color/colorPrimary"
                     android:layout_gravity="center_horizontal"/>
                 <Spinner
                     android:id="@+id/sp_edit_anchor1"
@@ -272,11 +295,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="center_horizontal">
                     <Button
+                        android:textColor="#fff"
+                        android:padding="6dp"
+                        android:background="@drawable/button_background"
                         android:id="@+id/btnedit_add_anchor2"
                         android:layout_width="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:layout_height="wrap_content"
                         android:text="+ Add more"/>
                     <Button
+                        android:layout_marginBottom="4dp"
+                        android:padding="6dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/button_background"
                         android:id="@+id/btnedit_remove_anchor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -286,6 +317,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:background="#000000"/>
             </LinearLayout>
@@ -296,12 +328,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/border_bottom"
                 android:layout_marginTop="5dp"
                 android:visibility="gone">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Anchor 2 details:"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="15dp"
                     android:layout_gravity="center_horizontal"/>
                 <Spinner
@@ -318,6 +352,9 @@
                     android:layout_height="wrap_content"/>
 
                 <Button
+                    android:textColor="#fff"
+                    android:padding="6dp"
+                    android:background="@drawable/button_background"
                     android:id="@+id/btnedit_remove_anchor2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -325,6 +362,7 @@
                     android:text="Remove"/>
 
                 <View
+                    android:layout_marginTop="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginRight="10dp"
@@ -333,9 +371,13 @@
 
             <View
                 android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
                 android:layout_height="1dp"
                 android:background="#000000"/>
             <Button
+                android:textColor="#fff"
+                android:padding="6dp"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_edit_program"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
