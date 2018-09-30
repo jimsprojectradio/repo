@@ -71,9 +71,9 @@ public class FragmentSchedule extends Fragment implements View.OnClickListener{
         btnset_edit_schedule.setOnClickListener(this);
         btnset_remove_schedule=(Button)v.findViewById(R.id.btn_set_remove_schedule);
         btnset_remove_schedule.setOnClickListener(this);
-        btnset_add_schedule.setBackgroundResource(android.R.drawable.btn_default);
-        btnset_edit_schedule.setBackgroundResource(android.R.drawable.btn_default);
-        btnset_remove_schedule.setBackgroundResource(android.R.drawable.btn_default);
+        btnset_add_schedule.setBackgroundResource(R.drawable.button_background);
+        btnset_edit_schedule.setBackgroundResource(R.drawable.button_background);
+        btnset_remove_schedule.setBackgroundResource(R.drawable.button_background);
 
         //adapters
         arrayList= new ArrayList();
@@ -158,7 +158,7 @@ public class FragmentSchedule extends Fragment implements View.OnClickListener{
 
         flag_active_option=1;
 
-        btnset_add_schedule.setBackgroundColor(Color.parseColor("#00ff00"));
+        btnset_add_schedule.setBackgroundResource(R.drawable.button_background);
         layout_add_schedule.setVisibility(View.VISIBLE);
         layout_edit_schedule.setVisibility(View.GONE);
         layout_remove_schedule.setVisibility(View.GONE);
@@ -175,9 +175,9 @@ public class FragmentSchedule extends Fragment implements View.OnClickListener{
                 layout_edit_schedule.setVisibility(View.GONE);
                 layout_remove_schedule.setVisibility(View.GONE);
                 progBar.setVisibility(View.GONE);
-                btnset_add_schedule.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_edit_schedule.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_remove_schedule.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_add_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_edit_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_remove_schedule.setBackgroundResource(R.drawable.button_background);
                 arrayAdapter.clear();
                 break;
             case R.id.btn_set_edit_schedule:
@@ -185,9 +185,9 @@ public class FragmentSchedule extends Fragment implements View.OnClickListener{
                 layout_add_schedule.setVisibility(View.GONE);
                 layout_remove_schedule.setVisibility(View.GONE);
                 progBar.setVisibility(View.VISIBLE);
-                btnset_edit_schedule.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_add_schedule.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_remove_schedule.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_edit_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_add_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_remove_schedule.setBackgroundResource(R.drawable.button_background);
                 arrayAdapter.clear();
                 flag_active_option=1;
                 fetch_schedule();
@@ -197,9 +197,9 @@ public class FragmentSchedule extends Fragment implements View.OnClickListener{
                 layout_add_schedule.setVisibility(View.GONE);
                 layout_edit_schedule.setVisibility(View.GONE);
                 progBar.setVisibility(View.VISIBLE);
-                btnset_remove_schedule.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_add_schedule.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_edit_schedule.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_remove_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_add_schedule.setBackgroundResource(R.drawable.button_background);
+                btnset_edit_schedule.setBackgroundResource(R.drawable.button_background);
                 arrayAdapter.clear();
                 flag_active_option=2;
                 fetch_schedule();
