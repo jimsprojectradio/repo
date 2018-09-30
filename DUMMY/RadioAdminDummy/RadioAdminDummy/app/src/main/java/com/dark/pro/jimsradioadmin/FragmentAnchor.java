@@ -78,10 +78,10 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
         btnset_edit_anchor.setOnClickListener(this);
         btnset_remove_anchor=(Button)v.findViewById(R.id.btn_set_remove_anchor);
         btnset_remove_anchor.setOnClickListener(this);
-        btnset_view_anchor.setBackgroundResource(android.R.drawable.btn_default);
-        btnset_add_anchor.setBackgroundResource(android.R.drawable.btn_default);
-        btnset_edit_anchor.setBackgroundResource(android.R.drawable.btn_default);
-        btnset_remove_anchor.setBackgroundResource(android.R.drawable.btn_default);
+        btnset_view_anchor.setBackgroundResource(R.drawable.button_background);
+        btnset_add_anchor.setBackgroundResource(R.drawable.button_background);
+        btnset_edit_anchor.setBackgroundResource(R.drawable.button_background);
+        btnset_remove_anchor.setBackgroundResource(R.drawable.button_background);
 
         //Action buttons for queries
         btn_add_anchor=(Button)v.findViewById(R.id.btn_add_anchor);
@@ -115,7 +115,7 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 new AlertDialog.Builder(getActivity())
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(R.drawable.alert)
                         .setTitle("Anchor details")
                         .setMessage("Name:\n"+arr_anchor[position][1]+
                                 "\n\nDescription:\n"+arr_anchor[position][2])
@@ -170,7 +170,7 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
 
         flag_active_option=0;
         progressBar.setVisibility(View.VISIBLE);
-        btnset_view_anchor.setBackgroundColor(Color.parseColor("#00ff00"));
+        btnset_view_anchor.setBackgroundResource(R.drawable.button_background);
         fetchAnchor();
         return v;
     }
@@ -180,10 +180,10 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
         switch(v.getId()) {
             case R.id.btn_set_view_anchor:
                 flag_active_option = 0;
-                btnset_view_anchor.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_add_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_edit_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_remove_anchor.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_view_anchor.setBackgroundResource(R.drawable.activated_btn);
+                btnset_add_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_edit_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_remove_anchor.setBackgroundResource(R.drawable.button_background);
                 layout_view_anchor.setVisibility(View.GONE);
                 layout_add_anchor.setVisibility(View.GONE);
                 layout_edit_anchor.setVisibility(View.GONE);
@@ -194,10 +194,10 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_set_add_anchor:
                 flag_active_option = 1;
-                btnset_add_anchor.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_view_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_edit_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_remove_anchor.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_add_anchor.setBackgroundResource(R.drawable.activated_btn);
+                btnset_view_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_edit_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_remove_anchor.setBackgroundResource(R.drawable.button_background);
                 layout_view_anchor.setVisibility(View.GONE);
                 layout_add_anchor.setVisibility(View.VISIBLE);
                 layout_edit_anchor.setVisibility(View.GONE);
@@ -206,10 +206,10 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_set_edit_anchor:
                 flag_active_option = 2;
-                btnset_edit_anchor.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_view_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_add_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_remove_anchor.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_edit_anchor.setBackgroundResource(R.drawable.activated_btn);
+                btnset_view_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_add_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_remove_anchor.setBackgroundResource(R.drawable.button_background);
                 layout_view_anchor.setVisibility(View.GONE);
                 layout_add_anchor.setVisibility(View.GONE);
                 layout_edit_anchor.setVisibility(View.GONE);
@@ -220,10 +220,10 @@ public class FragmentAnchor extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_set_remove_anchor:
                 flag_active_option = 3;
-                btnset_remove_anchor.setBackgroundColor(Color.parseColor("#00ff00"));
-                btnset_view_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_add_anchor.setBackgroundResource(android.R.drawable.btn_default);
-                btnset_edit_anchor.setBackgroundResource(android.R.drawable.btn_default);
+                btnset_remove_anchor.setBackgroundResource(R.drawable.activated_btn);
+                btnset_view_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_add_anchor.setBackgroundResource(R.drawable.button_background);
+                btnset_edit_anchor.setBackgroundResource(R.drawable.button_background);
                 layout_view_anchor.setVisibility(View.GONE);
                 layout_add_anchor.setVisibility(View.GONE);
                 layout_edit_anchor.setVisibility(View.GONE);

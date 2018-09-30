@@ -14,23 +14,31 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/btn_set_view_anchor"
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
             android:text="View \nAnchor"
             android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
             android:id="@+id/btn_set_add_anchor"
             android:text="Add \nAnchor"
             android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
             android:id="@+id/btn_set_edit_anchor"
             android:text="Edit \nAnchor"
             android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
             android:id="@+id/btn_set_remove_anchor"
             android:text="Remove \nAnchor"
             android:layout_width="wrap_content"
@@ -40,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="15dp"/>
 
     <ProgressBar
         android:id="@+id/progbar_anchor_options"
@@ -112,10 +120,13 @@
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"/>
             <Button
+                android:background="@drawable/button_background"
+                android:textColor="#fff"
                 android:id="@+id/btn_add_anchor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add anchor"
+                android:padding="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
@@ -139,6 +150,7 @@
                 android:textSize="20dp"
                 android:text="Select a anchor to update"/>
             <Spinner
+                android:background="@drawable/border_bottom"
                 android:id="@+id/sp_edit_anchor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -168,6 +180,9 @@
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"/>
             <Button
+                android:padding="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#fff"
                 android:id="@+id/btn_edit_anchor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -195,6 +210,7 @@
                 android:textSize="20dp"
                 android:text="Select a anchor to delete"/>
             <Spinner
+                android:background="@drawable/border_bottom"
                 android:id="@+id/sp_remove_anchor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -212,6 +228,9 @@
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"/>
             <Button
+                android:padding="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#fff"
                 android:id="@+id/btn_remove_anchor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
