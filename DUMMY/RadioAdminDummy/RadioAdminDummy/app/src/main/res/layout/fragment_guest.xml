@@ -96,6 +96,7 @@
                 android:textSize="20dp"
                 android:text="Enter the details of the new guest"/>
             <EditText
+                android:backgroundTint="@color/colorPrimary"
                 android:id="@+id/edt_add_guestname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,6 +114,9 @@
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"/>
             <Button
+                android:textColor="#fff"
+                android:padding="4dp"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_add_guest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,6 +144,7 @@
                 android:textSize="20dp"
                 android:text="Select a guest to update"/>
             <Spinner
+                android:background="@drawable/border_bottom"
                 android:id="@+id/sp_edit_guest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,6 +174,9 @@
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"/>
             <Button
+                android:textColor="#fff"
+                android:padding="4dp"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_edit_guest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -196,6 +204,7 @@
                 android:textSize="20dp"
                 android:text="Select a guest to delete"/>
             <Spinner
+                android:background="@drawable/border_bottom"
                 android:id="@+id/sp_remove_guest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -213,6 +222,9 @@
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"/>
             <Button
+                android:padding="4dp"
+               android:textColor="#fff"
+                android:background="@drawable/button_background"
                 android:id="@+id/btn_remove_guest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -116,7 +116,7 @@ public class FragmentGuest extends Fragment implements View.OnClickListener {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 new AlertDialog.Builder(getActivity())
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(R.drawable.alert)
                         .setTitle("Guest details")
                         .setMessage("Name:\n"+arr_guest[position][1]+
                                 "\n\nDescription:\n"+arr_guest[position][2])
