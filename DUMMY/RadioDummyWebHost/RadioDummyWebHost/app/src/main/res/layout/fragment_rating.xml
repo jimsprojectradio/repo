@@ -78,9 +78,15 @@
         android:layout_gravity="center_horizontal"/>
 
     <EditText
+        android:background="@drawable/backgrund_edt"
         android:id="@+id/edt_add_rating_name"
         android:textSize="20dp"
+        android:padding="10dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textAlignment="center"
         android:hint="Enter name"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +95,13 @@
     <EditText
         android:id="@+id/edt_add_rating_email"
         android:textSize="20dp"
+        android:padding="10dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:background="@drawable/backgrund_edt"
         android:hint="Enter email"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,6 +115,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Submit Rating"
+        android:textColor="#fff"
         android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>

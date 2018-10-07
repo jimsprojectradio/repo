@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         nav_layout = (LinearLayout) findViewById(R.id.layout_frag_main);
         nav_layout.removeAllViews();
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.layout_frag_main, new ShowSelector()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.layout_frag_main, new ShowSelector()).addToBackStack(null).commit();
 
     }
 
@@ -109,50 +108,47 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this, "Viewing shows..", Toast.LENGTH_SHORT).show();
             nav_layout.removeAllViews();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new ShowSelector()).commit();
+                    .replace(R.id.layout_frag_main, new ShowSelector()).addToBackStack(null).commit();
             //txt_title.setText("Welcome User");
 
         }else if (id == R.id.nav_fav) {
             Toast.makeText(this, "Viewing Favourites..", Toast.LENGTH_SHORT).show();
             nav_layout.removeAllViews();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new FavoritesFragment()).commit();
+                    .replace(R.id.layout_frag_main, new FavoritesFragment()).addToBackStack(null).commit();
             //txt_title.setText("Favourites");
 
         } else if (id == R.id.nav_schedule) {
             Toast.makeText(this, "Schedules", Toast.LENGTH_SHORT).show();
             nav_layout.removeAllViews();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new ScheduleFragment()).commit();
+                    .replace(R.id.layout_frag_main, new ScheduleFragment()).addToBackStack(null).commit();
             //txt_title.setText("Upcoming Schedules");
         }
         else if (id == R.id.nav_suggest) {
             Toast.makeText(this, "Submit suggestions to the admin..", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new SuggestionFragment()).commit();
+                    .replace(R.id.layout_frag_main, new SuggestionFragment()).addToBackStack(null).commit();
             //txt_title.setText("Suggestions");
 
         }
         else if (id == R.id.nav_rate) {
             Toast.makeText(this, "Rate the application..", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new RatingFragment()).commit();
+                    .replace(R.id.layout_frag_main, new RatingFragment()).addToBackStack(null).commit();
             //txt_title.setText("Rating");
 
         }
         else if (id == R.id.nav_about) {
             Toast.makeText(this, "About Us", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new AboutUs()).commit();
-            //txt_title.setText("Rating");
+                    .replace(R.id.layout_frag_main, new AboutUs()).addToBackStack(null).commit();
 
         }
         else if (id == R.id.nav_contact) {
             Toast.makeText(this, "Contact Us", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.layout_frag_main, new ContactUs()).commit();
-            //txt_title.setText("Rating");
-
+                    .replace(R.id.layout_frag_main, new ContactUs()).addToBackStack(null).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
