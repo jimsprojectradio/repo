@@ -212,6 +212,10 @@ public class PlayStream extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
+        if(exoPlayer!=null){
+            exoPlayer.stop();
+            exoPlayer=null;
+        }
     }
 
     @Override

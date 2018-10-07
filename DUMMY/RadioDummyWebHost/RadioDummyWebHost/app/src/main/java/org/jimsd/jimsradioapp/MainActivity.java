@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity
 
         } else {
             new AlertDialog.Builder(this)
-                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setIcon(R.drawable.alert)
                     .setTitle("Exit..?")
                     .setMessage("Are you sure you want to exit..?")
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
