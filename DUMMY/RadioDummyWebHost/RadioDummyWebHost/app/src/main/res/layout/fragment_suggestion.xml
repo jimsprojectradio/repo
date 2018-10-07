@@ -6,19 +6,35 @@
     tools:context="org.jimsd.jimsradioapp.SuggestionFragment">
 
     <LinearLayout
+        android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginTop="10dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Suggestions"
-            android:textColor="#000000"
+            android:textColor="#fff"
             android:textSize="25dp"
             android:layout_gravity="center_horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginTop="1dp"
+            />
 
         <EditText
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:background="@drawable/backgrund_edt"
             android:id="@+id/edt_add_suggest_name"
             android:textSize="20dp"
             android:hint="Name"
@@ -28,6 +44,11 @@
             android:maxLength="50"/>
 
         <EditText
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:background="@drawable/backgrund_edt"
             android:id="@+id/edt_add_suggest_email"
             android:textSize="20dp"
             android:hint="Email"
@@ -39,6 +60,11 @@
 
         <EditText
             android:id="@+id/edt_add_suggest_contact"
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:background="@drawable/backgrund_edt"
             android:textSize="20dp"
             android:layout_marginTop="10dp"
             android:hint="Contact Number"
@@ -48,6 +74,10 @@
             android:maxLength="15"/>
 
         <EditText
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:background="@drawable/backgrund_edt"
             android:id="@+id/edt_add_suggest"
             android:textSize="20dp"
             android:layout_marginTop="10dp"
@@ -64,6 +94,7 @@
             android:id="@+id/btn_submit_suggest"
             android:background="@drawable/button"
             android:layout_width="200dp"
+            android:textColor="#fff"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Submit Suggestion"
