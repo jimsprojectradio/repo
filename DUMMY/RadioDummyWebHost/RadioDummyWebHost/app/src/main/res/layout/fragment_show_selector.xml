@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="org.jimsd.jimsradioapp.ShowSelector"
-    android:background="#ffffff"
+    android:background="@drawable/coolbg"
     android:orientation="vertical">
 
     <TextView
@@ -13,7 +13,7 @@
         android:text="Select a Radio show..."
         android:textColor="#fff"
         android:textSize="24dp"
-        android:background="@drawable/background"
+        android:background="@color/colorAccent"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

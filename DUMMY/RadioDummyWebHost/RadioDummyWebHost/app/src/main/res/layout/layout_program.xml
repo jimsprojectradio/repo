@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/list_txt_prog_name"
-        android:textSize="24dp"
+        android:textSize="18dp"
         android:textColor="#3c61e9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
