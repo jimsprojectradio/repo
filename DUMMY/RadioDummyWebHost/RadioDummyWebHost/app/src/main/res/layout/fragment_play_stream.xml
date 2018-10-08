@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ffffff"
+    android:background="@drawable/coolbg"
     tools:context="org.jimsd.jimsradioapp.PlayStream">
-
     <TextView
         android:id="@+id/txt_progname"
         android:textColor="#fff"
@@ -53,7 +52,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="10dp"
         android:textSize="12dp"
-        android:text="Views:"
+        android:text="Total Views:"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/txt_desc"
         android:visibility="gone"/>
@@ -68,6 +67,15 @@
         android:background="@drawable/default_fav"
         android:layout_marginEnd="10dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="40dp"
+        android:text="ADD TO FAVOURITE"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_check_fav_stream"
+        app:layout_constraintRight_toRightOf="@id/btn_check_fav_stream" />
     <ScrollView
         android:id="@+id/scroll_play_detail"
         android:layout_width="0dp"

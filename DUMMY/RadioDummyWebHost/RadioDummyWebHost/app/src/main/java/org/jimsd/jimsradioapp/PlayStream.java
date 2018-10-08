@@ -287,7 +287,7 @@ public class PlayStream extends Fragment {
                                 for (int i = 0; i < json.length(); i++) {
                                     //adding to drawer code
                                     obj = json.getJSONObject(i);
-                                    detail=detail+"\n#"+(i+1)+" "+obj.getString("guest_name");
+                                    detail=detail+"\n"+(i+1)+" "+obj.getString("guest_name");
                                     detail=detail+"\nDescription : "+obj.getString("guest_desc");
                                 }
                             }else{
@@ -336,7 +336,7 @@ public class PlayStream extends Fragment {
                                 for (int i = 0; i < json.length(); i++) {
                                     //adding to drawer code
                                     obj = json.getJSONObject(i);
-                                    detail=detail+"\n#"+(i+1)+" "+obj.getString("anchor_name");
+                                    detail=detail+"\n"+(i+1)+" "+obj.getString("anchor_name");
                                     detail=detail+"\nDescription : "+obj.getString("anchor_desc");
                                 }
                                 txt_detail.setText(detail);
