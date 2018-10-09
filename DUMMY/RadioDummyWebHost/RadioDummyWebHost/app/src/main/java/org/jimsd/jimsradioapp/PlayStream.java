@@ -240,8 +240,8 @@ public class PlayStream extends Fragment {
                             if(json.length()>=1) {
                                 obj = json.getJSONObject(0);
                                 String views=obj.getString("views");
-                                Toast.makeText(getActivity(), "Views:"+views, Toast.LENGTH_SHORT).show();
-                                txt_views.setText("Views: "+views);
+                                Toast.makeText(getActivity(), "Total Views:"+views, Toast.LENGTH_SHORT).show();
+                                txt_views.setText("Total Views: "+views);
                                 txt_views.setVisibility(View.VISIBLE);
                             }else{
                                 Toast.makeText(getActivity(), "An error has occured..", Toast.LENGTH_SHORT).show();

@@ -4,18 +4,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#1511d9"
+    android:background="@drawable/jims_splash_edited_small"
+
     tools:context="org.jimsd.jimsradioapp.SplashScreen">
 
-    <ImageView
-        android:scaleType="center"
-        android:id="@+id/img_splash_screen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/radio_baner"
-        app:layout_constraintLeft_toLeftOf="parent" />
+
 
 </RelativeLayout>
