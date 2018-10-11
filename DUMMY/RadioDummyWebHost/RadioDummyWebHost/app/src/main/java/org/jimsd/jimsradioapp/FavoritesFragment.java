@@ -139,12 +139,12 @@ public class FavoritesFragment extends Fragment {
                                 if(arr_prog[i][5].equals("0000-00-00"))
                                     item.put( "line2", "No record date registered..");
                                 else
-                                    item.put( "line2", "Record Date: "+ arr_prog[i][5]);
+                                    item.put( "line2", "Date: "+ arr_prog[i][5]);
 
                                 if(arr_prog[i][4].equals("null"))
                                     item.put( "line3", "No description registered..");
                                 else
-                                    item.put( "line3", "Record Date:"+arr_prog[i][4]);
+                                    item.put( "line3", "Description: "+arr_prog[i][4]);
                                 prog_data.add( item );
                                 simpleAdapter.notifyDataSetChanged();
                                 index++;

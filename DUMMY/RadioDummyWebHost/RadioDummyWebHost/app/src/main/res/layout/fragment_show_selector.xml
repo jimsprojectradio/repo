@@ -10,9 +10,9 @@
     <TextView
         android:padding="15dp"
         android:id="@+id/txt_show_frag"
-        android:text="Select a Radio show..."
+        android:text="Select a Radio show"
         android:textColor="#fff"
-        android:textSize="24dp"
+        android:textSize="20dp"
         android:background="@color/colorAccent"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"

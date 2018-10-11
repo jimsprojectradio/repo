@@ -162,14 +162,14 @@ public class ProgramSelector extends Fragment {
                                 item.put( "line1", arr_prog[i][0]);
 
                                 if(arr_prog[i][5].equals("0000-00-00"))
-                                    item.put( "line2", "Recorded:");
+                                    item.put( "line2", "Recorded On: ");
                                 else
-                                    item.put( "line2", "Recorded: "+ arr_prog[i][5]);
+                                    item.put( "line2", "Recorded On: "+ arr_prog[i][5]);
 
                                 if(arr_prog[i][4].equals("null"))
-                                    item.put( "line3", "Info:");
+                                    item.put( "line3", "Info: ");
                                 else
-                                    item.put( "line3", "Info"+arr_prog[i][4]);
+                                    item.put( "line3", "Info: "+arr_prog[i][4]);
                                 prog_data.add( item );
                             }
                             progressBar.setVisibility(View.GONE);

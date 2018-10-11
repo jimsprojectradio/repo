@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="layout.ContactUs"
     android:orientation="vertical"
-    android:background="@drawable/bg_extr"
+    android:background="@drawable/coolbg"
     >
 
     <TextView
@@ -13,18 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:padding="20dp"
+        android:padding="15dp"
         android:text="Contact Us"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="22dp" />
+        android:textSize="20dp" />
     <TextView
-        android:padding="10dp"
+        android:padding="5dp"
         android:textSize="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="E-mail id: jimsvk@jagannath.org"
+        android:text="Jagannath International Management School"
         />
 
     <TextView
@@ -32,17 +32,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Jagganath International Management School"
-        android:layout_marginTop="8dp"
-        android:padding="10dp"
+        android:text="Community Radio JIMS 90.4 Mhz Vasant kunj"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
         />
     <TextView
         android:textSize="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Website: jimsd.org"
-        android:layout_marginTop="8dp"
+        android:text="OCF Pocket 9 Sector B, Vasant Kunj, New Delhi - 110070 "
+        android:layout_marginTop="3dp"
         android:padding="10dp"
         />
     <TextView
@@ -51,8 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Address: OCF B-9, Vasant Kunj, New Delhi - 110070"
-        android:layout_marginTop="8dp"
+        android:text="Phone No. 011-40619300, 40619357"
+        android:layout_marginTop="3dp"
         />
        <TextView
            android:textSize="18dp"
@@ -60,8 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Phone: 011 4061 9323"
-        android:layout_marginTop="8dp"
+        android:text="Email: crjimsvk@jagannath.org"
+        android:layout_marginTop="3dp"
         />
 
 

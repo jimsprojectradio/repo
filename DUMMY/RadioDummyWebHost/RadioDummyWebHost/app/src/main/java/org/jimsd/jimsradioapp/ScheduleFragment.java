@@ -68,7 +68,7 @@ public class ScheduleFragment extends Fragment {
                         .setIcon(android.R.drawable.ic_dialog_info)
                         .setTitle("Schedule")
                         .setMessage("A new program is being scheduled..." +
-                                "\n\nName: "+item1+"\n\nDetails: "+item2+
+                                "\n\nProgram: "+item1+"\n\nDetails: "+item2+
                                 "\n\nScheduled Date: "+item3)
                         .setPositiveButton("OK", null)
                         .show();

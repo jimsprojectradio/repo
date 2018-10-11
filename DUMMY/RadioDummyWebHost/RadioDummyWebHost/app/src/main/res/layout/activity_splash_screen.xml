@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/jims_splash_edited_small"
+    android:background="@drawable/jims_splash_new"
 
     tools:context="org.jimsd.jimsradioapp.SplashScreen">
 
